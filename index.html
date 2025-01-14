@@ -25,11 +25,11 @@
 <body>
 	<form>	
 		<label for="username">Username: </label>
-		<input type="text" name="uname">
+		<input type="text" name="uname" required pattern="[a-zA-Z0-9]{8,30}">
 		<label for="password">Password: </label>
-		<input type="password" name="password">
+		<input type="password" name="password" required pattern="[a-zA-Z0-9]{8,30}">
 		<label for="age">Age: </label>
-		<input type="number" name="age">
+		<input type="number" name="age" min="15" max="99" required>
 		<input type="submit">
   	</form>
 	<img src="car.jpg" name="car">
